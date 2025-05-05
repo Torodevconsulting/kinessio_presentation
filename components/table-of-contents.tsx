@@ -33,18 +33,19 @@ const TableOfContents = () => {
   }
 
   const sections = [
-    { id: "about-builtt", title: "O Builtt-u" },
-    { id: "about-project", title: "O projektu" },
-    { id: "project-phases", title: "Projektne faze" },
-    { id: "project-benefits", title: "Prednosti ovog projekta" },
-    { id: "cost-overview", title: "Pregled procena" },
-    { id: "payment-terms", title: "Uslovi plaćanja" },
-    { id: "additional-services", title: "Dodatne usluge" },
-    { id: "terms-and-conditions", title: "Opšti uslovi i odredbe" },
+    { id: "about-builtt", title: "Anomalía GA4: Usuarios > Pageviews" },
+    { id: "about-project", title: "Unificación Datos Online/Offline" },
+    { id: "project-phases", title: "Discrepancia CM vs GA4 (90%)" },
+    { id: "consent-mode", title: "Consent Mode sin Integración CMP" },
+    { id: "payment-terms", title: "Captura Variables fuera del dataLayer" },
+    { id: "additional-services", title: "Medición para Legálitas" },
+    { id: "frictionPoints", title: "Puntos de Fricción en Legálitas" },
+    { id: "crolegalitas", title: "CRO Legalitas" },
+    { id: "comunications", title: "Mejoras Comunicación Legálitas" },
   ]
 
   return (
-    <nav className="sticky top-4 self-start p-4">
+    <nav className="sticky top-4 self-start p-4 text-xl">
       <ul className="space-y-2">
         {sections.map((section) => (
           <li key={section.id}>

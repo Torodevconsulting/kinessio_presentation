@@ -19,18 +19,18 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection nextSectionRef={firstSectionRef} />
-      <div className="bg-primary text-primary-foreground flex-grow">
+      <div className="text-primary-foreground flex-grow">
         <div className="container mx-auto px-4 py-8 flex gap-8">
           <TableOfContents />
           <main className="flex-1">
             <AboutBuiltt />
             <AboutProject />
             <ProjectPhases />
-            <ProjectBenefits />
             <PregledProcena />
             <TermsOfPayment />
             <OptionalServices />
             <TermsAndConditions />
+            <ProjectBenefits/>
           </main>
         </div>
       </div>

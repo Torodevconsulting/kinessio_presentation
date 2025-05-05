@@ -13,7 +13,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ nextSectionRef }) => {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/builtt_personal_cover_without_logo-kkH3tDxwbYuPQef78SKUFE53nupNRF.png)",
+            "url(/kinesso_personal_cover.png)",
           backgroundSize: "auto",
           backgroundRepeat: "repeat",
           backgroundPosition: "top right",
@@ -23,20 +23,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ nextSectionRef }) => {
       <div className="relative z-10 text-secondary-foreground text-center w-full max-w-4xl mx-auto px-4">
         <div className="mb-8">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Builtt-monogram-neg-L2JDybset8Y5IvuXocM1lUSq6IVi76.png"
+            src="/Kinesso_Logo_White.png"
             alt="Builtt Logo"
-            width={120}
-            height={120}
+            width={240}
+            height={240}
             className="mx-auto mb-12"
             priority
           />
         </div>
-        <h1 className="text-6xl font-bold mb-8 text-center">TESLA</h1>
+        <h1 className="text-6xl font-bold mb-8 text-center">CRO Specialist Presentation</h1>
         <div className="text-center">
-          <p className="mb-2">Pripremio: Darko Đoković</p>
-          <p className="mb-2">Pripremljeno za: Mirsolava Jeremić</p>
-          <p className="mb-2">Datum: 25/01/2025</p>
-          <p>Verzija: 1.0</p>
+          <p className="mb-2">Name: Isaac Toro</p>
+          <p className="mb-2">Kinesso Headquarters Barcelona, Spain</p>
+          <p className="mb-2">Date: 09/05/2025</p>
         </div>
       </div>
       <ScrollArrow targetRef={nextSectionRef} />

@@ -2,46 +2,29 @@ import Section from "@/components/section"
 
 export default function AboutBuiltt() {
   return (
-    <Section id="about-builtt" title="O Builtt-u">
-      <p className="mb-4">
-        U Builtt-u specijalizovani smo za kreiranje inovativnih, skalabilnih i dugoročnih rešenja za razvoj veb sajtova
-        koji pokreću poslovni uspeh. Sa više od 15 godina iskustva u industriji, naš posvećeni tim stručnjaka uspešno je
-        realizovao više od 100 projekata u različitim industrijama, pružajući prilagođena rešenja za veb sajtove koja
-        odgovaraju jedinstvenim poslovnim potrebama.
+    <Section id="about-builtt" title="Anomalía GA4: Usuarios > Pageviews">
+      <p className="mb-4 text-xl">
+        En este escenario estamos ante una clara anomalía analítica: GA4 registra más usuarios que pageviews, lo cual es contraintuitivo ya que normalmente un usuario genera múltiples pageviews.
       </p>
-      <p className="mb-4">Nudimo našim klijentima kompletnu uslugu pozicioniranja u veb produkciji, koja uključuje:</p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>
-          <strong>Dizajn:</strong> Kreiranje jedinstvenih i angažujućih dizajna koji odražavaju vaš brend i unapređuju
-          korisničko iskustvo.
-        </li>
-        <li>
-          <strong>Razvoj:</strong> Izgradnja robusnih, skalabilnih i sigurnih veb sajtova koji su prilagođeni vašim
-          specifičnim zahtevima.
-        </li>
-        <li>
-          <strong>Strategija i rast:</strong> Pomoć u definisanju jasne digitalne strategije koja podržava vaše
-          dugoročne poslovne ciljeve, optimizujući vašu online prisutnost za maksimalni rast.
-        </li>
-        <li>
-          <strong>Podrška i održavanje:</strong> Pružanje kontinuirane podrške i održavanja kako bi vaš veb sajt bio
-          uvek ažuriran, siguran i optimizovan.
-        </li>
-        <li>
-          <strong>Skaliranje tima:</strong> Pružanje fleksibilnih i skalabilnih timskih resursa za podršku vašim
-          projektima kako rastu, bilo kroz kratkoročne saradnje ili dugoročna partnerstva.
-        </li>
+      <p className="mb-4 text-xl font-bold">
+        Posibles causas:
+      </p>
+      <ul className="mb-4 text-xl list-disc pl-8">
+        <li>Implementación incorrecta del código de seguimiento que no dispara eventos page_view</li>
+        <li>Problemas con integraciones de Firebase o apps móviles que registran usuarios sin pageviews</li>
+        <li>Configuración errónea del User-ID que infla artificialmente el conteo de usuarios</li>
       </ul>
-      <p className="mb-4">
-        Razumemo da svaka kompanija ima svoj jedinstveni identitet, koji se odražava i na specifične potrebe za razvojem
-        veb sajtova. Naš tim pristupa svakom projektu na personalizovan način, kako bi u potpunosti razumeo vaše
-        ciljeve, ciljne grupe i tržišne dinamike.
+      <p className="mb-4 text-xl font-bold">
+        Proceso de investigación:
       </p>
-      <p>
-        Na taj način razvijamo sveobuhvatnu strategiju koja ne samo da se usklađuje sa vašim ciljevima za veb sajt, već
-        i unapređuje korisničko iskustvo, obezbeđujući da vaš veb sajt bude efikasan alat za postizanje poslovnih
-        ciljeva.
-      </p>
+      <ol className="mb-4 text-xl list-decimal pl-8">
+        <li>Verificar la implementación del código de GA4 en todas las páginas usando Google Tag Assistant</li>
+        <li>Analizar datos por segmentos (dispositivos, plataformas) para localizar el origen del problema</li>
+        <li>Revisar la configuración del User-ID</li>
+        <li>Examinar si existen usuarios que generan otros eventos pero no pageviews</li>
+        <li>Verificar configuraciones de Firebase u otras integraciones</li>
+        <li>Contrastar con datos de otras herramientas analíticas para confirmar la discrepancia</li>
+      </ol>
     </Section>
   )
 }

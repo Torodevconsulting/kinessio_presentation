@@ -20,7 +20,7 @@ const BrandSection = () => {
             <span className="text-4xl font-light">×</span>
             <div className="flex flex-col items-center">
               <Image src="/placeholder.svg" alt="Builtt Logo" width={200} height={60} className="w-48 md:w-64" />
-              <span className="text-sm mt-2">powered by Degordian</span>
+              <span className="text-sm mt-2">powered by Toro Developments</span>
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-light max-w-4xl mx-auto leading-relaxed">

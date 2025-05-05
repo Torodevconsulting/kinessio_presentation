@@ -2,47 +2,29 @@ import Section from "@/components/section"
 
 export default function TermsAndConditions() {
   return (
-    <Section id="terms-and-conditions" title="Opšti uslovi i odredbe">
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Ponuda je važeća 15 dana od datuma prijema.</li>
+    <Section id="frictionPoints" title="Puntos de fricción con legalitas y propuestas de cambio. ">
+      <ol className="list-decimal pl-6 space-y-2 text-xl">
         <li>
-          Ponuda uključuje do 3 runde povratnih informacija ili zahteva za izmenama. Na primer, nakon što Builtt
-          isporuči dizajn veb stranice, klijent pruža povratne informacije, a izmeni dizajna se vrše u skladu s tim.
-          Nakon prve runde izmena, klijent ima pravo na još jednu rundu. Ukoliko je potrebna treća (ili više) runda
-          izmena, svaka naredna runda biće naplaćena dodatno.
+        <h2 className="font-semibold mt-6 mb-4">Multiplicidad de opciones sin jerarquía clara</h2>
+        <p>En la sección de planes nos encontramos con tres planes diferentes (Contigo, Contigo Plus y Contigo Premium) sin destacar suficientemente las diferencias clave o el valor específico de cada uno, lo que puede generar indecisión.</p>
         </li>
         <li>
-          Rok za davanje povratnih informacija i odgovaranje na upite/emailove je 2 radna dana. Ukoliko vreme odgovora
-          premaši ovaj rok, rok isporuke projekta smatraće se odloženim.
-        </li>
-        <li>Prilagođavanje sajta za Internet Explorer 11 je dodatna usluga i biće naplaćeno odvojeno.</li>
-        <li>
-          Prihvatanje stavki navedenih u ponudi podrazumeva odobrenje projekta. Proizvodnja odobrenog projekta počinje
-          nakon potpisivanja ugovora o saradnji i uplate avansa.
+        <h3 className="font-semibold mt-6 mb-4">Ambigüedad en el proceso</h3>
+        <p>No se visualiza claramente cuáles son los pasos para contratar ni qué ocurre después de hacer clic en los botones de acción. Sería ideal poder dar al usuario un pequeño resumen a modo de breadcrumb del proceso de contratación.</p>
         </li>
         <li>
-          Ponuda uključuje potpisivanje projekta od strane Builtt-a kao i njegovo korišćenje u promotivne svrhe. Ako je
-          potrebna "white label" verzija projekta, ova usluga će se smatrati dodatnim troškom i biće naplaćena odvojeno.
+        <h4 className="font-semibold mt-6 mb-4">Exceso de opciones de contacto</h4>
+        <p>Se ofrecen múltiples canales (teléfono, WhatsApp, formulario web) sin priorizar el canal óptimo para cada tipo de cliente potencial.</p></li>
+        <li>
+        <h5 className="font-semibold mt-6 mb-4">Casos de éxito sin conexión clara con la acción</h5>
+        <p>La sección "Casos reales" muestra testimonios, pero no conecta directamente con cómo contratar el servicio.</p>
         </li>
         <li>
-          Ponuda ne uključuje proizvodnju, prilagođavanje foto/video sadržaja. Ove usluge su opcione i mogu se zahtevati
-          odvojeno, ako je potrebno.
+        <h6 className="font-semibold mt-6 mb-4">Barrera de elección inmediata</h6>
+        <p>En la sección “Para lo excepcional” se pide al usuario que elija entre tres opciones ("Tengo una duda legal", "Quiero poner una reclamación", "Tengo un juicio próximamente") sin clarificar si esta elección es vinculante o puede cambiar después.</p>
         </li>
-        <li>
-          Ponuda uključuje unos tekstualnog i/ili foto/video sadržaja za svih 18 jezika. Klijent je dužan da obezbedi
-          sav sadržaj, kao i prevode na sve jezike.
-        </li>
-        <li>
-          Ponuda uključuje samo implementaciju stavki navedenih u ponudi i u skladu sa uslovima koji su istaknuti u
-          ponudi. Ako klijent zahteva kupovinu specifičnih licenci, fontova, domena, foto/video/audio sadržaja ili
-          drugih potrošnih materijala, ove usluge neće biti uključene u cenu ponude, već će biti tretirane kao dodatni
-          trošak.
-        </li>
-        <li>
-          Ukoliko klijent zahteva implementaciju koja nije obuhvaćena specifikacijom, smatraće se zahtevom za promenu, i
-          biće kreirana nova (separatna) procena za nju.
-        </li>
-      </ul>
+        
+      </ol>
     </Section>
   )
 }

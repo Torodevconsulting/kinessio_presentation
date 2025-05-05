@@ -2,75 +2,46 @@ import Section from "@/components/section"
 
 export default function ProjectPhases() {
   return (
-    <Section id="project-phases" title="Projektne faze">
-      <p className="mb-4">Ponuda obuhvata sledeće faze konceptualizacije i razvoja veb sajta:</p>
-      <ol className="list-decimal list-inside space-y-2 mb-6">
-        <li>Uvodni sastanak (Discovery and Strategy)</li>
-        <li>Wireframe faza (Wireframe)</li>
-        <li>Art direkcija</li>
-        <li>Faza dizajna</li>
-        <li>Faza razvoja (development)</li>
-        <li>Objavljivanje sajta na produkcioni server</li>
-      </ol>
-
-      <h3 className="text-xl font-semibold mb-2">Uvodni sastanak</h3>
-      <p className="mb-4">
-        Naša usluga, istraživanje i strategija - "Discovery and Strategy", dizajnirana je da vas postavi na put ka
-        uspehu kroz temeljno razumevanje vašeg poslovanja i kreiranje prilagođenog plana. Počinjemo detaljnim
-        istraživanjem vaših trenutnih operacija, tržišne pozicije i izazova. Ovo uključuje angažovanje vašeg tima,
-        analizu podataka i identifikaciju ključnih prilika.
-      </p>
-      <p className="mb-4">
-        Nakon faze istraživanja, prelazimo u fazu Strategije, gde razvijamo prilagođeni plan koji definiše specifične
-        akcije potrebne za postizanje vaših ciljeva. Ovaj strateški plan će služiti kao vodič za navigaciju kroz
-        konkurentski pejzaž, optimizaciju resursa i podsticanje rasta.
-      </p>
-      <p className="mb-4">
-        Investiranjem u ovu fazu osiguravate da svaki naredni korak bude informisan, strateški i u skladu sa vašom
-        vizijom za budućnost.
+    <Section id="croLegalitas" title="Análisis de discrepancia entre Campaign Manager y GA4">
+      <p className="mb-4 text-xl">
+        Hemos identificado una discrepancia crítica: Campaign Manager reporta un 90% más de clics en creatividades que los aterrizajes registrados por GA4 en las landing pages. Esta diferencia significativa requiere un análisis exhaustivo para garantizar la precisión en la medición de resultados de campaña.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2">Wireframe Faza</h3>
-      <p className="mb-4">
-        Wireframe faza je posvećena definisanju strukture i sadržaja vašeg sajta. Pošto već imamo postojeće module i
-        sadržaj, fokusiraćemo se na poboljšanje sekcija sajta koje zahtevaju najviše pažnje, kao što su navigacioni
-        meni, raspored i korisnički tok. Za potrebe ove ponude, naš tim je radio na ovoj fazi kako bismo upotpunili
-        tvrdnju da nismo zadovoljni dizajnom koji ste dostavili uz zahtev za kreiranje ponude i taj materijal vam
-        dostavljamo kao dodatak ovoj ponudi.
-      </p>
+      <h3 className="text-xl font-semibold mb-2">Posibles causas:</h3>
+      <ul className="list-disc list-inside space-y-2 mb-6 text-xl">
+        <li><span className="font-medium">Problemas técnicos:</span> Implementación incorrecta del código GA4, configuración errónea de etiquetas en CM, o pérdida de parámetros UTM durante redirecciones</li>
+        <li><span className="font-medium">Tráfico de baja calidad:</span> Bots, clics fraudulentos o accidentales que CM contabiliza pero no llegan a cargar la página en GA4</li>
+        <li><span className="font-medium">Diferencias metodológicas:</span> CM registra clics instantáneamente mientras GA4 requiere carga completa de la página</li>
+      </ul>
 
-      <h3 className="text-xl font-semibold mb-2">Art direkcija</h3>
-      <p className="mb-4">
-        Pošto klijent još uvek nije potvrdio umetničku direkciju za veb sajt, naš tim će pregledati smernice vašeg
-        brenda i usmeriti vizuelni pravac za ceo sajt. Ovo će obezbediti doslednost sa vašim identitetom brenda, a
-        ujedno poboljšati celokupno korisničko iskustvo.
-      </p>
+      <h3 className="text-xl font-semibold mb-2">Plan de investigación:</h3>
+      
+      <h4 className="text-xl font-medium mt-4 mb-2">1. Verificación técnica:</h4>
+      <ul className="list-disc list-inside space-y-1 ml-4 mb-4 text-xl">
+        <li>Revisar implementación de GA4 en todas las landing pages</li>
+        <li>Comprobar integridad de parámetros UTM en redirecciones</li>
+        <li>Verificar sincronización entre plataformas</li>
+      </ul>
 
-      <h3 className="text-xl font-semibold mb-2">Faza dizajna</h3>
-      <p className="mb-4">
-        Tokom faze dizajna, primenićemo utvrđenu "art direkciju" za dizajn novih stranica vašeg sajta. Iako već znamo
-        koje module i sadržaj imamo, naš dizajnerski tim će se fokusirati na redizajn i restrukturiranje tih elemenata
-        kako bi obezbedio najbolje moguće korisničko iskustvo i prenošenje poruke vašeg brenda. Za potrebe ove ponude,
-        naš tim je radio na ovoj fazi kako bismo upotpunili tvrdnju da nismo zadovoljni dizajnom koji ste dostavili uz
-        zahtev za kreiranje ponude i taj materijal vam dostavljamo kao dodatak ovoj ponudi. Ukoliko vam se svidja
-        definisani pravac i pravac dizajna koji smo kreirali za vas, ovo će biti korišćeno kao polazna tačka za razvoj
-        svih ostalih stranica koje su neophodne.
-      </p>
+      <h4 className="text-xl font-medium mt-4 mb-2">2. Análisis segmentado:</h4>
+      <ul className="list-disc list-inside space-y-1 ml-4 mb-4 text-xl">
+        <li>Examinar datos por dispositivo, navegador y sistema operativo</li>
+        <li>Identificar patrones geográficos o temporales sospechosos</li>
+      </ul>
 
-      <h3 className="text-xl font-semibold mb-2">Faza razvoja</h3>
-      <p className="mb-4">
-        Nakon što dizajn bude odobren, naš razvojni tim će započeti proces kreiranja vizuelnih i funkcionalnih
-        komponenti sajta. Ovo uključuje prevođenje odobrenog dizajna u kod, obezbeđujući da animacije, hover efekti na
-        dugmadi za poziv na akciju i druge interakcije budu potpuno funkcionalni i u skladu sa dizajnom. Paralelno s
-        tim, razvijaćemo CMS prema vašim specifikacijama, omogućavajući jednostavno upravljanje sadržajem za vaš tim.
-      </p>
+      <h4 className="text-xl font-medium mt-4 mb-2">3. Evaluación de calidad del tráfico:</h4>
+      <ul className="list-disc list-inside space-y-1 ml-4 mb-4 text-xl">
+        <li>Implementar filtros anti-bot (Doubleverify, reCAPTCHA)</li>
+        <li>Analizar comportamiento post-clic (tiempo en página, rebote)</li>
+        <li>Identificar fuentes con mayor discrepancia</li>
+      </ul>
 
-      <h3 className="text-xl font-semibold mb-2">Objavljivanje sajta na produkcioni server</h3>
-      <p className="mb-4">
-        Poslednja faza našeg razvojnog ciklusa je objavljivanje projekta na produkcioni server. Nakon što dobijemo
-        odobrenje za staging okruženje (i frontend i CMS), nastavljamo sa aktivnostima za Go-Live. Vreme trajanja ove
-        faze zavisi od okruženja za hosting, bilo da je to naš server ili server klijenta.
-      </p>
+      <h4 className="text-xl font-medium mt-4 mb-2">4. Revisión de Campaign Manager:</h4>
+      <ul className="list-disc list-inside space-y-1 ml-4 mb-4 text-xl">
+        <li>Verificar configuraciones que puedan generar conteos duplicados</li>
+        <li>Examinar informes de verificación de visibilidad</li>
+        <li>Comparar con otras campañas para determinar si es un problema aislado</li>
+      </ul>
     </Section>
   )
 }

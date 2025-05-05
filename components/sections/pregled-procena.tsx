@@ -1,64 +1,59 @@
 import Section from "@/components/section"
 import PricingList from "@/components/pricing-list"
 import ProjectTimelineTable from "@/components/project-timeline-table"
+import Image from "next/image"
 
 export default function PregledProcena() {
   return (
-    <Section id="cost-overview" title="Pregled procena">
-      <p className="mb-4">
-        U svakom projektu, tačna procena je ključna kako bi se osigurao usklađenost između očekivanja klijenta i resursa
-        potrebnih za ispunjenje uspešnog rezultata. U Builtt-u, pratimo strukturirani proces za procenu kako vremenskih
-        okvira tako i troškova koji su uključeni u svaku fazu projekta, osiguravajući transparentnost i jasno
-        razumevanje isporuka.
+    <Section id="consent-mode" title="Implementación de Consent Mode en GA4 con un CMP sin integración directa">
+      <p className="mb-4 text-xl">
+        Cuando realizamos una implementación de Google Analytics 4 (GA4) y nuestro cliente trabaja con un Consent Manager Platform (CMP) que no ofrece integración directa con Google Analytics, es necesario que configuremos el Consent Mode de forma personalizada para asegurarnos del cumplimiento de las normativas de privacidad y una correcta recopilación de datos según el consentimiento del usuario.
       </p>
-      <h3 className="text-xl font-semibold mt-6 mb-4">Proces procene podeljen je u sledeće faze:</h3>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Procena opsega projekta</h4>
-      <p className="mb-4">
-        Počinjemo analizom opsega projekta, uključujući sve zahteve, funkcionalnosti i specifikacije dizajna. Ovo nam
-        pomaže da razumemo celokupan obim rada i identifikujemo potencijalne složenosti ili dodatne zahteve koji se mogu
-        pojaviti.
+      <h3 className="text-xl font-semibold mt-6 mb-4 ">Solución técnica recomendada</h3>
+      <h4 className="text-xl font-semibold mt-4 mb-2">Implementación a través de Google Tag Manager (GTM)</h4>
+      <p className="mb-4 text-xl">
+        Google Tag Manager proporciona la flexibilidad necesaria para gestionar las configuraciones de consentimiento y cargar tags de GA4 condicionalmente basándose en las elecciones del usuario.
       </p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Cilj lansiranja: Oktobar 2025</li>
-        <li>Trajanje projekta: 8-9 meseci</li>
-        <li>Tokom trajanja projekta: Dvo-nedeljni sastanci; Mesečni izveštaji;</li>
+      <h4 className="text-xl font-semibold mt-4 mb-2">Configuración inicial de Consent Mode</h4>
+      <p className="mb-4 text-xl">
+        Antes de cargar cualquier etiqueta de GA4, debemos establecer una configuración predeterminada en la que todos los almacenamientos se consideran "denegados" por defecto:
+      </p>
+      <div className="my-6 flex justify-center">
+        <Image 
+          src="/cmd_1.png" 
+          alt="Configuración inicial de Consent Mode" 
+          width={600} 
+          height={400} 
+          className="rounded-lg shadow-md"
+        />
+      </div>
+      <h4 className="text-xl font-semibold mt-8 mb-2">Actualización dinámica del estado de consentimiento</h4>
+      <p className="mb-4 text-xl">
+        Una vez que el usuario proporciona sus preferencias a través del CMP, se actualiza el estado de consentimiento en GA4:
+      </p>
+      <div className="my-6 flex justify-center">
+        <Image 
+          src="/cmd_2.png" 
+          alt="Actualización dinámica del estado de consentimiento" 
+          width={600} 
+          height={400} 
+          className="rounded-lg shadow-md"
+        />
+      </div>
+      <h4 className="text-xl font-semibold mt-8 mb-2">Configuración de carga condicional</h4>
+      <p className="mb-4 text-xl">
+        Debemos de configurar los tags de GA4 para que se activen solo cuando se haya establecido el estado de consentimiento adecuado, ya sea mediante:
+      </p>
+      <ul className="list-disc pl-6 mb-4 text-xl">
+        <li>Disparadores condicionales en GTM</li>
+        <li>Variables personalizadas que evalúen el estado de consentimiento</li>
       </ul>
-      <h4 className="text-lg font-semibold mt-8 mb-4">Vremenske procene</h4>
-      <p className="mb-4">
-        Na osnovu opsega projekta, naš tim procenjuje vreme potrebno za završavanje svake faze projekta, od otkrivanja i
-        strategije do dizajna, razvoja i lansiranja. Ove vremenske procene zasnivamo na našem prethodnom iskustvu,
-        industrijskim standardima i složenosti rada koji je uključen.
-      </p>
-      <div className="mb-8">
-        <ProjectTimelineTable />
-      </div>
-
-      <h4 className="text-lg font-semibold mt-8 mb-4">Troškovne procene</h4>
-      <p className="mb-4">
-        Kada su vremenske procene jasne, izračunavamo ukupne troškove projekta na osnovu naših satnica i vremena
-        potrebnog za svaku fazu. Takođe, uzimamo u obzir bilo koje dodatne troškove, kao što su alati trećih strana,
-        licence ili integracije koje će biti potrebne za završavanje projekta.
-      </p>
-      <div className="mb-8">
-        <PricingList />
-      </div>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Fleksibilnost i prilagođavanja</h4>
-      <p className="mb-4">
-        Iako su naše procene što tačnije, razumemo da se mogu pojaviti nepredviđeni izazovi. Ako bude potrebno bilo
-        kakve promene ili dodatni rad, pružićemo ažurirane procene i vremenske okvire kako bi se osiguralo da projekat
-        bude na pravom putu.
-      </p>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Kontinuirana komunikacija</h4>
-      <p className="mb-4">
-        Tokom projekta, održavamo otvorenu komunikaciju sa našim klijentima kako bismo osigurali da projekat napreduje
-        kako je planirano. Svaka odstupanja od početnih procena biće diskutovana, a revidirani vremenski okviri ili
-        troškovi će biti blagovremeno saopšteni.
-      </p>
-      <p className="mt-6">
-        Razbijanjem projekta u jasne faze i pružanjem detaljnih procena, naš cilj je da klijentima pružimo transparentan
-        i predvidljiv put ka uspehu. Ovaj proces nam omogućava da upravljamo očekivanjima, efikasno raspodelimo resurse
-        i osiguramo pravovremenu isporuku.
-      </p>
+      <h4 className="text-xl font-semibold mt-8 mb-2">Ventajas de esta implementación</h4>
+      <ul className="list-disc pl-6 mb-4 text-xl">
+        <li>Cumplimiento normativo con GDPR, e-Privacy y otras legislaciones de privacidad</li>
+        <li>Respeto a las preferencias del usuario</li>
+        <li>Flexibilidad para adaptarse a cualquier CMP, independientemente de su falta de integración nativa</li>
+      </ul>
     </Section>
   )
 }

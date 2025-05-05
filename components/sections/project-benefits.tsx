@@ -2,125 +2,58 @@ import Section from "@/components/section"
 
 export default function ProjectBenefits() {
   return (
-    <Section id="project-benefits" title="Prednosti ovog projekta">
-      <h3 className="text-xl font-semibold mb-4">Ciljevi projekta</h3>
-      <p className="mb-4">
-        <strong>Prepoznatljivost brenda:</strong> Kreiraćemo prilagođeno rešenje koje ne samo da se usklađuje sa
-        identitetom brenda Tesla, već i pruža besprekorno, korisniku prijateljsko iskustvo, čime se dodatno učvršćuje
-        prisutnost brenda u digitalnom prostoru.
-      </p>
-      <p className="mb-4">
-        <strong>Podrška za više jezika:</strong> Veb sajt će podržavati 20+ jezika, a njegova arhitektura biće
-        dizajnirana tako da u budućnosti podrži bilo koji broj jezika, čime se obezbeđuje globalna dostupnost i
-        pristupačnost.
-      </p>
-      <p className="mb-4">
-        <strong>SEO funkcionalnosti:</strong> Optimizovaćemo veb sajt za pretraživače, sa ciljem da postignemo SEO
-        rezultat veći od 90 na PageSpeed Insights, čime ćemo osigurati dobar rang i efikasne performanse sajta. Ovo je
-        tehnički deo SEO-a.
-      </p>
-      <p className="mb-4">
-        <strong>Usklađenost sa GDPR-om:</strong> Veb sajt će biti usklađen sa GDPR propisima, uključujući jasne politike
-        privatnosti i mehanizme za saglasnost sa kolačićima, obezbeđujući zaštitu podataka i privatnost korisnika na
-        svim tačkama kontakta.
-      </p>
-      <h3 className="text-2xl font-semibold mb-4">Predloženo rešenje: Headless CMS (Payload CMS) sa Next.js</h3>
-      <p className="mb-4">
-        Predlažemo moderno rešenje za razvoj veb sajta koje kombinuje Payload CMS (headless CMS) za back-end i Next.js
-        za front-end. Ova kombinacija pruža fleksibilnost, performanse i skalabilnost koja je potrebna za budućnost vama
-        prilagođenog digitalnog iskustva.
-      </p>
+    <Section id="crolegalitas" title="Propuestas de mejora para la optimización de la tasa de conversión de Legalitas">
+      <ol className="list-decimal pl-6 mb-4 space-y-6 text-xl">
+        <li>
+          <h3 className="font-semibold mt-6 mb-4">Simplificar el proceso de elección de planes</h3>
+          <p className="mt-2 text-xl  ">
+            Por qué: La comparativa actual de planes (Contigo, Contigo Plus, Premium) no destaca claramente las diferencias de valor. Debemos poder simplificar esta elección y resaltar los beneficios específicos de cada plan, esto reduciría la indecisión del usuario.
+          </p>
+        </li>
 
-      <h4 className="text-lg font-semibold mb-2">Zašto Headless CMS (Payload CMS) i Next.js?</h4>
-      <ul className="list-disc pl-6 mb-4 space-y-2">
         <li>
-          <strong>Razdvojena arhitektura:</strong> Sa headless CMS-om kao što je Payload CMS, front-end (ono što
-          korisnik vidi) i back-end (upravljanje sadržajem) su odvojeni. Ovo omogućava veću fleksibilnost i
-          skalabilnost. Sadržaj se upravlja kroz Payload CMS i može se distribuirati na bilo koju platformu (vlasnički
-          sajt, mobilne aplikacije, IoT uređaji) putem API-ja, bez da bude vezan za specifičan frontend dizajn ili
-          tehnologiju.
+          <h3 className="font-semibold mt-6 mb-4">Implementar un CTA principal más destacado</h3>
+          <p className="mt-2">
+            Por qué: Los botones actuales ("Me interesa", "Descubre") no generan suficiente urgencia. Un CTA más enfocado en la acción como "Comienza tu protección legal ahora" y con mayor presencia visual aumentaría los clics.
+          </p>
         </li>
-        <li>
-          <strong>Brzina i performanse:</strong> Next.js je poznat po brzini i koristi server-side rendering (SSR) ili
-          static site generation (SSG), što rezultira bržim učitavanjem stranica i boljim korisničkim iskustvom. Sajtovi
-          izgrađeni pomoću Next.js učitavaju se brže, što je ključno za korisničko zadovoljstvo i SEO. Brži sajt znači
-          bolje korisničko iskustvo i bolji rang na pretraživačima.
-        </li>
-        <li>
-          <strong>Skalabilnost:</strong> Ovaj pristup je inherentno skalabilan. Kako vaše poslovanje raste, arhitektura
-          omogućava lako proširivanje. Dodavanje novih stranica, proizvoda, ili čak novih jezika može se obaviti bez
-          većih tehničkih promena. Fleksibilnost Payload CMS i Next.js znači da vaš sajt može brzo da se prilagodi novim
-          tehnologijama ili rastućim potrebama za sadržajem.
-        </li>
-      </ul>
 
-      <h4 className="text-lg font-semibold mb-2">Upravljanje sadržajem bez problema</h4>
-      <p className="mb-4">
-        Payload CMS nudi intuitivno i lako za korišćenje sučelje koje pojednostavljuje upravljanje sadržajem. Nema
-        potrebe da budete tehnički stručnjak da biste ažurirali sadržaj sajta. Lako možete upravljati tekstovima,
-        slikama, video sadržajem, pa čak i složenim strukturama sadržaja sa centralizovane nadzorne ploče, čineći proces
-        efikasnim i pojednostavljenim.
-      </p>
+        <li>
+          <h3 className="font-semibold mt-6 mb-4">Crear un funnel guiado con menos pasos</h3>
+          <p className="mt-2">
+            Por qué: Actualmente se pide al usuario elegir entre varias categorías sin claridad sobre el proceso. Un embudo con indicadores de progreso y menos decisiones iniciales reduciría el abandono.
+          </p>
+        </li>
 
-      <h4 className="text-lg font-semibold mb-2">Priprema za budućnost</h4>
-      <p className="mb-4">
-        Pošto je Payload CMS odvojen od front-end-a, lako se prilagođava novim tehnologijama i može se lako integrisati
-        sa budućim platformama. Možete unapređivati sajt bez brige o ograničenjima koja dolaze sa zastarelim CMS
-        rešenjima.
-      </p>
+        <li>
+          <h3 className="font-semibold mt-6 mb-4">Incorporar un chatbot de diagnóstico inicial</h3>
+          <p className="mt-2">
+            Por qué: Muchos usuarios no saben exactamente qué servicio necesitan. Podemos añadir un asistente que ayude a diagnosticar su situación legal y realizar sugerencias que simplificarían la entrada y personalizaría mas la oferta.
+          </p>
+        </li>
 
-      <h4 className="text-lg font-semibold mb-2">Prednosti u odnosu na custom ili tradicionalna CMS rešenja</h4>
-      <ul className="list-disc pl-6 mb-4 space-y-2">
         <li>
-          <strong>Fleksibilnost:</strong> Tradicionalni CMS sistemi kao što su WordPress ili custom rešenja su tesno
-          povezani sa strukturom svog front-end-a. To znači da ako želite da redizajnirate ili ažurirate sajt, to može
-          biti dugotrajan proces. Sa headless CMS-om, front-end i back-end su nezavisni, pa se promene u dizajnu ili
-          ažuriranje sadržaja mogu vršiti bez uticaja na drugi deo.
+          <h3 className="font-semibold mt-6 mb-4">Ofrecer prueba gratuita o consulta inicial sin compromiso</h3>
+          <p className="mt-2">
+            Por qué: Los servicios legales generan incertidumbre. Reducir la barrera de entrada con una primera experiencia gratuita aumentaría la confianza y conversión posterior.
+          </p>
         </li>
-        <li>
-          <strong>Prilagođavanje:</strong> Za razliku od tradicionalnih CMS platformi koje često koriste unapred
-          definisane teme ili šablone, Next.js omogućava potpunu prilagodbu dizajna i funkcionalnosti sajta. Imate
-          potpunu kontrolu nad korisničkim iskustvom i možete napraviti zaista jedinstven i brendiran sajt.
-        </li>
-        <li>
-          <strong>Brži razvoj:</strong> Tradicionalni CMS sistemi zahtevaju upravljanje mnogim ugrađenim funkcijama koje
-          možda nisu potrebne za vaše poslovanje. Sa Next.js i Payload CMS možemo izgraditi tačno ono što vam treba, bez
-          nepotrebnog opterećenja. Ovo smanjuje vreme razvoja i omogućava efikasniji proces izgradnje.
-        </li>
-        <li>
-          <strong>Skalabilnost za rast:</strong> Sa tradicionalnim CMS rešenjima, kako sajt raste (više sadržaja, više
-          posetilaca), može postati sporiji ili složeniji za upravljanje. Next.js i Payload CMS su dizajnirani da se
-          nose sa velikim količinama sadržaja i saobraćaja, bez ugrožavanja performansi ili funkcionalnosti. Ovo je
-          posebno važno kako vaše poslovanje raste i treba vam platforma koja može da prati taj rast.
-        </li>
-        <li>
-          <strong>SEO optimizacija:</strong> Next.js je dizajniran da bude SEO-prijateljski od samog početka. Mogućnost
-          renderovanja stranica na serveru omogućava pretraživačima lakše indeksiranje vašeg sadržaja, što nije uvek
-          slučaj sa tradicionalnim CMS platformama, posebno onima koje se oslanjaju na klijentsko renderovanje.
-        </li>
-        <li>
-          <strong>Laka integracija:</strong> Payload CMS je izgrađen sa pristupom zasnovanim na API-ju, što olakšava
-          integraciju sa drugim sistemima, uslugama ili alatima koje vaše poslovanje može koristiti u budućnosti.
-          Tradicionalni CMS sistemi često zahtevaju komplikovane dodatke ili custom razvoj za integracije, što može
-          usporiti napredak.
-        </li>
-      </ul>
 
-      <h4 className="text-lg font-semibold mb-2">Ukratko:</h4>
-      <p className="mb-4">Kombinacija Headless CMS (Payload CMS) i Next.js vam pruža:</p>
-      <ul className="list-disc pl-6 mb-4 space-y-2">
-        <li>Veću fleksibilnost i skalabilnost za budući rast.</li>
-        <li>Brže performanse sajta koje poboljšavaju korisničko iskustvo i SEO.</li>
-        <li>Pojednostavljeno upravljanje sadržajem sa intuitivnim nadzornim panelom.</li>
-        <li>Potpunu prilagodbu koja omogućava izradu jedinstvenog, brendiranog digitalnog iskustva.</li>
-        <li>Laku integraciju sa alatima i uslugama trećih strana.</li>
-        <li>Pripremu za budućnost koja se lako prilagođava novim tehnologijama.</li>
-      </ul>
-      <p className="mb-4">
-        Ovo rešenje vam daje najbolje od oba sveta: fleksibilan, brz i skalabilan sajt koji može da raste sa vašim
-        poslovanjem, sve to uz platformu koja je korisniku prijateljska za upravljanje sadržajem. Birajući Payload CMS i
-        Next.js, ulažete u moderno, efikasno i robusno veb rešenje koje će nastaviti da pruža vrednost u budućnosti.
-      </p>
+        <li>
+          <h3 className="font-semibold mt-6 mb-4">Rediseñar el comparador de planes con enfoque en beneficios</h3>
+          <p className="mt-2">
+            Por qué: Actualmente los planes se centran en características. Sería ideal hacer un rediseño enfocado en los resultados y beneficios para el usuario, esto en un principio debería generar mayor valor percibido.
+          </p>
+        </li>
+
+        <li>
+          <h3 className="font-semibold mt-6 mb-4">Incorporar social proof dinámico</h3>
+          <p className="mt-2">
+            Por qué: Aunque hay reseñas de Trustpilot, Podemos jugar con el sesgo de la urgencia y darles a las comunicaciones una pizca de sensación de gravedad, por lo general las personas que contratan un servicio legal se encuentran en una situación complicada y mostrar notificaciones en tiempo real puede incrementar a que el usuario se interese de forma mas inmediata en la contratación del servicio.
+          </p>
+        </li>
+      </ol>
+
     </Section>
   )
 }

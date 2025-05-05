@@ -1,22 +1,26 @@
 import Section from "@/components/section"
+import Image from "next/image"
 
 export default function TermsOfPayment() {
   return (
-    <Section id="payment-terms" title="Uslovi plaćanja">
-      <p className="mb-4">Raspored plaćanja za projekat biće sledeći:</p>
-      <ul className="list-disc pl-6 mb-4 space-y-2">
-        <li>15% pri pokretanju projekta</li>
-        <li>30% nakon završetka faze dizajna</li>
-        <li>55% nakon završetka projekta i spremnosti za lansiranje</li>
-      </ul>
-      <p className="mb-4">
-        U slučaju kašnjenja sa plaćanjem, Builtt zadržava pravo da obustavi izvršenje radova dok se ne izvrši uplata.
-      </p>
-      <p className="mb-4">
-        Ako dođe do prekida u realizaciji projekta zbog kašnjenja sa plaćanjem i potrebno je ponovno pokrenuti projekat,
-        biće kreiran novi vremenski okvir za razvoj projekta, uzimajući u obzir trenutno dostupne resurse.
-      </p>
-      <p className="mb-4">Rok za početak planiranja resursa i projekta biće 3 dana od prijema avansne uplate.</p>
+    <Section id="payment-terms" title="Captura de variables mediante Event Listeners en Google Tag Manager">
+      <p className="mb-4 text-xl">Cuando necesitamos capturar variables que no están disponibles en el dataLayer para la implementación de píxeles en GTM, los event listeners por lo general son una solución eficaz. Este método nos permite "escuchar" eventos específicos en la página web y capturar datos en tiempo real cuando estos eventos ocurren.</p>
+      <ol className="list-decimal pl-6 mb-4 space-y-2 text-xl">
+        <li>Creamos un tag de HTML personalizado</li>
+        <li>Implementamos el código del event listener</li>
+        <div className="my-4">
+          <Image
+            src="/eventlistener.png"
+            alt="Event Listener Implementation"
+            width={800}
+            height={400}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+        <li>Creamos una variable en GTM para acceder al valor</li>
+        <li>Configuramos un trigger para el evento personalizado</li>
+        <li>Usamos la variable en nuestro píxel</li>
+      </ol>
     </Section>
   )
 }

@@ -2,11 +2,11 @@ import { Github, Linkedin, Twitter } from "lucide-react"
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-8 mt-16">
+    <footer className="bg-pink-500 text-secondary-foreground py-8 mt-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Builtt</h3>
+            <h3 className="text-xl font-bold mb-2">ToroDevelopments</h3>
             <p className="text-sm">Empowering Your Digital Presence</p>
           </div>
           <div className="flex space-x-4">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Builtt. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ToroDevelopments. All rights reserved.</p>
         </div>
       </div>
     </footer>

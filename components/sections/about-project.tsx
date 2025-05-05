@@ -2,36 +2,34 @@ import Section from "@/components/section"
 
 export default function AboutProject() {
   return (
-    <Section id="about-project" title="O projektu">
-      <p className="mb-4">
-        Tesla zahteva razvoj prilagođenog, višejezičkog B2C veb sajta, kao i integraciju B2B i teslagiveaways.com veb
-        sajtova. Nova platforma će podržavati 18 jezika i dizajnirana je da unapredi prepoznatljivost brenda, poboljša
-        korisničko iskustvo i prikaže rastući katalog proizvoda.
+    <Section id="about-project" title="Unificación de datos de ventas entre canales físicos y digitales">
+      <p className="mb-4 text-xl">
+        La propuesta para unificar datos de ventas entre canales físicos y digitales se estructura en dos pilares fundamentales que crean una visión 360° del cliente mediante la vinculación de todas las transacciones a perfiles únicos.
       </p>
-      <p className="mb-4">
-        Veb sajt će sadržati jasnu i korisnički prijatnu UI, optimizovanu za mobilni pristup, u skladu sa identitetom
-        brenda Tesla. Ključne funkcionalnosti uključuju:
+      <p className="mb-4 text-xl font-semibold mt-6 mb-4">
+        Sistema de identificación única:
       </p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Katalog proizvoda sa stranicama za detalje proizvoda (PDP) i stranice za listu proizvoda (PLP)</li>
-        <li>Pretragu proizvoda i funkcionalnost poređenja</li>
-        <li>Do 25 prilagođenih UI elemenata</li>
+      <ul className="list-disc pl-6 mb-4 text-xl">
+        <li>Tarjeta/cuenta de fidelidad omnicanal integrada</li>
+        <li>Proceso de registro simplificado con datos consistentes</li>
+        <li>Código QR personalizado en app móvil para identificación en tienda</li>
+        <li>Opciones de login biométrico para mayor seguridad</li>
+        <li>Sistema de incentivos para fomentar la identificación en cada compra</li>
       </ul>
-      <p className="mb-4">
-        Iako je Tesla dostavio početni dizajn, tim za dizajn Builtt-a je uočio oblasti u kojima trenutni dizajn ne u
-        potpunosti odgovara potrebama klijenta. Stoga, ova ponuda uključuje kompletan redizajn sva tri sajta (B2C, B2B i
-        teslagiveaways.com), uključujući mobilnu i desktop verziju.
+      <p className="mb-4 text-xl font-semibold mt-6 mb-4">
+        Caso de éxito: MobileConverters con LoyiCard
       </p>
-      <p className="mb-4">
-        Projekat će takođe obuhvatiti migraciju podataka, prenos svih blogova sa trenutnog sajta u novi CMS, kao i unos
-        sadržaja na svim 18 jezika. Tesla je odgovoran za obezbeđivanje celokupnog sadržaja i prevoda za sajt.
+      <p className="mb-4 text-xl">
+        MobileConverters (ecommerce de productos usados con 15 tiendas físicas) resolvió su fragmentación de datos implementando LoyiCard como plataforma de fidelización omnicanal. La solución creó un identificador único accesible mediante:
       </p>
-      <p className="mb-4">
-        Rešenje će biti optimizovano za SEO, usklađeno sa GDPR-om, efikasno u upravljanju resursima i podržavaće bogat
-        sadržaj. Sajt će uključivati praćenje korisnika i analitiku, a dizajnirana je sa ciljem buduće skalabilnosti,
-        uključujući mogućnost dodavanja novih prodavnica po zemljama.
+      <ul className="list-disc pl-6 mb-4 text-xl">
+        <li>Código QR personal en la app</li>
+        <li>Login sincronizado en el e-commerce</li>
+        <li>Tarjeta digital en el wallet del smartphone</li>
+      </ul>
+      <p className="mb-4 text-xl">
+        Esta implementación permitió superar los problemas de reconocimiento entre canales, maximizar oportunidades de venta cruzada y simplificar su programa de fidelización.
       </p>
-      <p>Veb sajt neće sadržavati korisničke naloge ili cene u svom početnom lansiranju.</p>
     </Section>
   )
 }
